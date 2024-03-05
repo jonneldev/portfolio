@@ -1,303 +1,514 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Google Font Link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <!-- Link to Open Sans font -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- External CSS -->
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./index.css" />
 
     <!-- Bootstrap Link -->
     <!-- Link to Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+
     <!-- Bootstrap Icons Link -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
 
     <!-- Font Awesome -->
     <!-- Link to Font Awesome CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
 
     <title>My Portfolio</title>
-</head>
+  </head>
 
-<body>
-    
+  <body>
     <div class="container-fluid">
-        <div class="row">
+      <div class="row">
+        <div>
+          <!-- Header Section -->
+          <div id="header">
             <div>
-                <!-- Header Section -->
-                <div id="header">
-                    <div>
-                        <!-- Profile Section -->
-                        <div class="profile">
-                            <img src="images/profile-img.png" alt="" class="img-fluid rounded-circle">
-                            <h1><a href="index.html">Jonnel Dosado</a></h1>
-                            <!-- Social Links -->
-                            <div class="social-links mt-3 text-center">
-                                <a href="#"><i class="fab fa-linkedin"></i></a>
-                                <a href="#"><i class="fab fa-github"></i></a>
-                                <a href="#"><i class="fab fa-facebook"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                            </div>
-                        </div>
-
-                        <!-- Navigation Menu -->
-                        <nav id="navbar" class="nav-menu mt-3 navbar">
-                            <ul>
-                                <li><a href="#hero" class="nav-link scrollto active"><i class="fas fa-home"></i> <span>Home</span></a></li>
-                                <li><a href="#about" class="nav-link scrollto"><i class="fas fa-user"></i> <span>About</span></a></li>
-                                <li><a href="#resume" class="nav-link scrollto"><i class="fas fa-file"></i> <span>Resume</span></a></li>
-                                <li><a href="#projects" class="nav-link scrollto"><i class="fas fa-book"></i> <span>Projects</span></a></li>
-                                <li><a href="#skills" class="nav-link scrollto"><i class="fas fa-server"></i> <span>Tools</span></a></li>
-                                <li><a href="#contact" class="nav-link scrollto"><i class="fas fa-envelope"></i> <span>Contact</span></a></li>                               
-                            </ul>                           
-                        </nav>
-                        
-                        <!-- Footer Section -->
-                        <footer id="footer">
-                            <div class="container">
-                                <div class="copyright">
-                                    <!-- Copyright Information -->
-                                    &copy; Copyright <strong><span>2023 - Jonnel Dosado</span></strong>
-                                </div>
-                            </div>
-                        </footer>                      
-                    </div>
+              <!-- Profile Section -->
+              <div class="profile">
+                <img
+                  src="images/profile-img.png"
+                  alt=""
+                  class="img-fluid rounded-circle"
+                />
+                <h1><a href="index.html">Jonnel Dosado</a></h1>
+                <!-- Social Links -->
+                <div class="social-links mt-3 text-center">
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                  <a href="#"><i class="fab fa-github"></i></a>
+                  <a href="#"><i class="fab fa-facebook"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
                 </div>
+              </div>
+
+              <!-- Navigation Menu -->
+              <nav id="navbar" class="nav-menu mt-3 navbar">
+                <ul>
+                  <li>
+                    <a href="#hero" class="nav-link scrollto active"
+                      ><i class="fas fa-home"></i> <span>Home</span></a
+                    >
+                  </li>
+                  <li>
+                    <a href="#about" class="nav-link scrollto"
+                      ><i class="fas fa-user"></i> <span>About</span></a
+                    >
+                  </li>
+                  <li>
+                    <a href="#projects" class="nav-link scrollto"
+                      ><i class="fas fa-book"></i> <span>Projects</span></a
+                    >
+                  </li>
+                  <li>
+                    <a href="#skills" class="nav-link scrollto"
+                      ><i class="fas fa-server"></i> <span>Skills</span></a
+                    >
+                  </li>
+                  <li>
+                    <a href="#contact" class="nav-link scrollto"
+                      ><i class="fas fa-envelope"></i> <span>Contact</span></a
+                    >
+                  </li>
+                </ul>
+              </nav>
+
+              <!-- Footer Section -->
+              <footer id="footer">
+                <div class="container">
+                  <div class="copyright">
+                    <!-- Copyright Information -->
+                    &copy; Copyright
+                    <strong><span>2023 - Jonnel Dosado</span></strong>
+                  </div>
+                </div>
+              </footer>
             </div>
-            
-            <!-- ======= Hero Section ======= -->
-            <!-- Hero Section with Introduction -->
-            <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
-                <div class="hero-container" data-aos="fade-in">
-                    <h1>Jonnel Dosado</h1>
-                    <p>I'm <span class="typed" data-typed-items="Full Stack Web Developer, MERN Stack Developer, Freelancer,"></span></p>
-                </div>
-            </section><!-- End Hero -->
-
-            <!-- Main Content Section -->
-            <main id="main">
-                <!-- About Section -->
-                <section id="about" class="about">
-                    <div class="container">
-                        <div class="section-title">
-                            <h2>About</h2>
-                            <p>
-                                Hey there! I'm Jonnel, a fresh graduate from a web development bootcamp. I'm passionate about coding and enjoy bringing ideas to life through websites and apps.
-                                During my bootcamp, I dived deep into learning various programming languages and tools to build websites from scratch. Now, I'm eager to apply my skills to real-world projects and tackle new challenges.
-                                Let's connect and explore how we can bring your ideas to life through code!
-                            </p>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-4" data-aos="fade-right">
-                                <!-- Profile Image -->
-                                <img src="images/profile-img.jpg" class="img-fluid" alt="">
-                            </div>
-                            <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-                                <h3>Full Stack Web Developer</h3>
-                                <div class="row">
-                                    <div>
-                                        <!-- Personal Information List -->
-                                        <ul class="ml-3">
-                                            <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>15 July 1992</span></li>
-                                            <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+123 456 7890</span></li>
-                                            <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Mandaue City, Cebu, Philippines</span></li>  
-                                            <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>31</span></li>
-                                            <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>jonneldosado.code@gmail.com</span></li>
-                                            <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>         
-                    </div>
-                </section>
-
-                <!-- Skills Section -->
-                <section id="skills" class="skills section-bg">
-                    <div class="container">
-                        <div class="section-title">
-                            <h2>Skills</h2>
-                            <p>I've developed a robust skill set through bootcamp training and self-study. Proficient in front-end technologies like HTML5, CSS3, and JavaScript, along with frameworks like React and Bootstrap. Experienced in back-end technologies such as Node.js, MongoDB, and Express.js. Skilled in version control (Git), cloud computing (AWS), containerization (Docker), and collaborative development (GitHub).
-                            </p>
-                        </div>
-
-                        <div class="row skills-content">
-                            <div class="col-lg-4" data-aos="fade-up">
-                                <!-- Front-end Development Skills -->
-                                <h3>Front-end Development</h3>
-                                <ul>
-                                    <li><i class="fab fa-html5"></i> HTML5</li>
-                                    <li><i class="fab fa-css3-alt"></i> CSS3</li>
-                                    <li><i class="fab fa-js-square"></i> JavaScript</li>
-                                    <li><i class="fab fa-react"></i> React</li>
-                                    <li><i class="fab fa-bootstrap"></i> Bootstrap</li>
-                                </ul>
-                            </div>
-
-                            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                                <!-- Back-end Development Skills -->
-                                <h3>Back-end Development</h3>
-                                <ul>
-                                    <li><i class="fab fa-node-js"></i> Node.js</li>
-                                    <li><i class="fas fa-database"></i> MongoDB</li>
-                                    <li><i class="fab fa-node-js"></i> Express.js</li>
-                                </ul>
-                            </div>
-
-                            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-                                <!-- Other Skills -->
-                                <h3>Others</h3>
-                                <ul>
-                                    <li><i class="fab fa-git"></i> Git</li>
-                                    <li><i class="fab fa-aws"></i> AWS</li>
-                                    <li><i class="fab fa-docker"></i> Docker</li>
-                                    <li><i class="fab fa-github"></i> GitHub</li>
-                                    <li><i class="fas fa-code"></i> VS Code</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                    </div>
-                </section><!-- End Skills Section -->
-
-                <!-- Contact Section -->
-                <section id="contact" class="contact">
-                    <div class="container">
-
-                        <div class="section-title">
-                            <h2>Contact</h2>
-                            <p>If you have any questions or inquiries, feel free to reach out to me using the form below.</p>
-                        </div>
-
-                        <div class="row" data-aos="fade-in">
-
-                            <div class="col-lg-5 d-flex align-items-stretch">
-                                <div class="info">
-                                    <!-- Contact Information -->
-                                    <div class="address">
-                                        <i class="bi bi-geo-alt"></i>
-                                        <h4>Location:</h4>
-                                        <p>No. 55, Xiangzeng 18th Street, Zhubei City, Hsinchu County, Taiwan, 302</p>
-                                    </div>
-
-                                    <div class="email">
-                                        <i class="bi bi-envelope"></i>
-                                        <h4>Email:</h4>
-                                        <p>jonneldosado.code@gmail.com</p>
-                                    </div>
-                                    <!-- Google Maps Embed -->
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.105330402759!2d120.98265431495295!3d24.836752984054382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442aae3c60a9e1f%3A0x5e06f051cafa78f1!2sZhubei%20City%2C%20Hsinchu%20County%2C%20Taiwan%2023022!5e0!3m2!1sen!2sus!4v1646797828223!5m2!1sen!2sus" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-7 mt-5 mt-lg-0">
-                                <div class="form">
-                                    <!-- Contact Form -->
-                                    <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                                        <div class="row">
-                                            <div class="form-group col-md-6">
-                                                <label for="name">Your Name</label>
-                                                <input type="text" name="name" class="form-control" id="name" required>
-                                            </div>
-                                            <div class="form-group col-md-6">
-                                                <label for="email">Your Email</label>
-                                                <input type="email" class="form-control" name="email" id="email" required>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="subject">Subject</label>
-                                            <input type="text" class="form-control" name="subject" id="subject" required>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="message">Message</label>
-                                            <textarea class="form-control" name="message" rows="10" required></textarea>
-                                        </div>
-                                        <div class="text-center"><button type="submit">Send Message</button></div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section><!-- End Contact Section -->
-               
-            </main>
+          </div>
         </div>
+
+        <!-- ======= Hero Section ======= -->
+        <!-- Hero Section with Introduction -->
+        <section
+          id="hero"
+          class="d-flex flex-column justify-content-center align-items-center"
+        >
+          <div class="hero-container" data-aos="fade-in">
+            <h1>Jonnel Dosado</h1>
+            <p>
+              I'm
+              <span
+                class="typed"
+                data-typed-items="Full Stack Web Developer, MERN Stack Developer, Freelancer,"
+              ></span>
+            </p>
+          </div>
+        </section>
+        <!-- End Hero -->
+
+        <!-- Main Content Section -->
+        <main id="main">
+          <!-- About Section -->
+          <section id="about" class="about">
+            <div class="container">
+              <div class="section-title">
+                <h2>About</h2>
+                <p>
+                  Hey there! I'm Jonnel, a fresh graduate from a web development
+                  bootcamp. I'm passionate about coding and enjoy bringing ideas
+                  to life through websites and apps. During my bootcamp, I dived
+                  deep into learning various programming languages and tools to
+                  build websites from scratch. Now, I'm eager to apply my skills
+                  to real-world projects and tackle new challenges. Let's
+                  connect and explore how we can bring your ideas to life
+                  through code!
+                </p>
+              </div>
+              <div class="row">
+                <div class="col-lg-4" data-aos="fade-right">
+                  <!-- Profile Image -->
+                  <img src="images/profile-img.jpg" class="img-fluid" alt="" />
+                </div>
+                <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+                  <h3>Full Stack Web Developer</h3>
+                  <div class="row">
+                    <div>
+                      <!-- Personal Information List -->
+                      <ul class="ml-3">
+                        <li>
+                          <i class="bi bi-chevron-right"></i>
+                          <strong>Birthday:</strong> <span>15 July 1992</span>
+                        </li>
+                        <li>
+                          <i class="bi bi-chevron-right"></i>
+                          <strong>Phone:</strong> <span>+123 456 7890</span>
+                        </li>
+                        <li>
+                          <i class="bi bi-chevron-right"></i>
+                          <strong>City:</strong>
+                          <span>Mandaue City, Cebu, Philippines</span>
+                        </li>
+                        <li>
+                          <i class="bi bi-chevron-right"></i>
+                          <strong>Age:</strong> <span>31</span>
+                        </li>
+                        <li>
+                          <i class="bi bi-chevron-right"></i>
+                          <strong>Email:</strong>
+                          <span>jonneldosado.code@gmail.com</span>
+                        </li>
+                        <li>
+                          <i class="bi bi-chevron-right"></i>
+                          <strong>Freelance:</strong> <span>Available</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="projects" class="projects">
+            <div class="container">
+              <div class="section-title">
+                <h2>Projects</h2>
+                <p>Check out some of my projects:</p>
+              </div>
+              <div class="row">
+                <!-- Project card for Portfolio - Jonnel Dosado -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="project-card">
+                    <div class="project-details">
+                      <h3>Portfolio - Jonnel Dosado</h3>
+                      <p>Description of the Portfolio project goes here.</p>
+                      <a
+                        href="https://app.netlify.com/sites/portfolio-jonneldosado/overview"
+                        target="_blank"
+                        class="btn btn-primary"
+                        >View Project</a
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Project card for Travel Journal - Jonnel Dosado -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="project-card">
+                    <div class="project-details">
+                      <h3>Travel Journal - Jonnel Dosado</h3>
+                      <p>
+                        Description of the Travel Journal project goes here.
+                      </p>
+                      <a
+                        href="https://app.netlify.com/sites/travel-journal-jonneldosado/overview"
+                        target="_blank"
+                        class="btn btn-primary"
+                        >View Project</a
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Project card for Airbnb Clone - Jonnel Dosado -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="project-card">
+                    <div class="project-details">
+                      <h3>Airbnb Clone - Jonnel Dosado</h3>
+                      <p>Description of the Airbnb Clone project goes here.</p>
+                      <a
+                        href="https://app.netlify.com/sites/airbnb-clone-jonneldosado/overview"
+                        target="_blank"
+                        class="btn btn-primary"
+                        >View Project</a
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Project card for Contact Details - Jonnel Dosado -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="project-card">
+                    <div class="project-details">
+                      <h3>Contact Details - Jonnel Dosado</h3>
+                      <p>
+                        Description of the Contact Details project goes here.
+                      </p>
+                      <a
+                        href="https://app.netlify.com/sites/contact-details-jonneldosado/overview"
+                        target="_blank"
+                        class="btn btn-primary"
+                        >View Project</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- Add more project cards for additional projects -->
+              </div>
+            </div>
+          </section>
+
+          <!-- Skills Section -->
+          <section id="skills" class="skills section-bg">
+            <div class="container">
+              <div class="section-title">
+                <h2>Skills</h2>
+                <p>
+                  I've developed a robust skill set through bootcamp training
+                  and self-study. Proficient in front-end technologies like
+                  HTML5, CSS3, and JavaScript, along with frameworks like React
+                  and Bootstrap. Experienced in back-end technologies such as
+                  Node.js, MongoDB, and Express.js. Skilled in version control
+                  (Git), cloud computing (AWS), containerization (Docker), and
+                  collaborative development (GitHub).
+                </p>
+              </div>
+
+              <div class="row skills-content">
+                <div class="col-lg-4" data-aos="fade-up">
+                  <!-- Front-end Development Skills -->
+                  <h3>Front-end Development</h3>
+                  <ul>
+                    <li><i class="fab fa-html5"></i> HTML5</li>
+                    <li><i class="fab fa-css3-alt"></i> CSS3</li>
+                    <li><i class="fab fa-js-square"></i> JavaScript</li>
+                    <li><i class="fab fa-react"></i> React</li>
+                    <li><i class="fab fa-bootstrap"></i> Bootstrap</li>
+                  </ul>
+                </div>
+
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                  <!-- Back-end Development Skills -->
+                  <h3>Back-end Development</h3>
+                  <ul>
+                    <li><i class="fab fa-node-js"></i> Node.js</li>
+                    <li><i class="fas fa-database"></i> MongoDB</li>
+                    <li><i class="fab fa-node-js"></i> Express.js</li>
+                  </ul>
+                </div>
+
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                  <!-- Other Skills -->
+                  <h3>Others</h3>
+                  <ul>
+                    <li><i class="fab fa-git"></i> Git</li>
+                    <li><i class="fab fa-aws"></i> AWS</li>
+                    <li><i class="fab fa-docker"></i> Docker</li>
+                    <li><i class="fab fa-github"></i> GitHub</li>
+                    <li><i class="fas fa-code"></i> VS Code</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- End Skills Section -->
+
+          <!-- Contact Section -->
+          <section id="contact" class="contact">
+            <div class="container">
+              <div class="section-title">
+                <h2>Contact</h2>
+                <p>
+                  If you have any questions or inquiries, feel free to reach out
+                  to me using the form below.
+                </p>
+              </div>
+
+              <div class="row" data-aos="fade-in">
+                <div class="col-lg-5 d-flex align-items-stretch">
+                  <div class="info">
+                    <!-- Contact Information -->
+                    <div class="address">
+                      <i class="bi bi-geo-alt"></i>
+                      <h4>Location:</h4>
+                      <p>
+                        No. 55, Xiangzeng 18th Street, Zhubei City, Hsinchu
+                        County, Taiwan, 302
+                      </p>
+                    </div>
+
+                    <div class="email">
+                      <i class="bi bi-envelope"></i>
+                      <h4>Email:</h4>
+                      <p>jonneldosado.code@gmail.com</p>
+                    </div>
+                    <!-- Google Maps Embed -->
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.105330402759!2d120.98265431495295!3d24.836752984054382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442aae3c60a9e1f%3A0x5e06f051cafa78f1!2sZhubei%20City%2C%20Hsinchu%20County%2C%20Taiwan%2023022!5e0!3m2!1sen!2sus!4v1646797828223!5m2!1sen!2sus"
+                      frameborder="0"
+                      style="border: 0; width: 100%; height: 290px"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+
+                <div class="col-lg-7 mt-5 mt-lg-0">
+                  <div class="form">
+                    <!-- Contact Form -->
+                    <form
+                      action="forms/contact.php"
+                      method="post"
+                      role="form"
+                      class="php-email-form"
+                    >
+                      <div class="row">
+                        <div class="form-group col-md-6">
+                          <label for="name">Your Name</label>
+                          <input
+                            type="text"
+                            name="name"
+                            class="form-control"
+                            id="name"
+                            required
+                          />
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="email">Your Email</label>
+                          <input
+                            type="email"
+                            class="form-control"
+                            name="email"
+                            id="email"
+                            required
+                          />
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="subject"
+                          id="subject"
+                          required
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea
+                          class="form-control"
+                          name="message"
+                          rows="10"
+                          required
+                        ></textarea>
+                      </div>
+                      <div class="text-center">
+                        <button type="submit">Send Message</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- End Contact Section -->
+        </main>
+      </div>
     </div>
 
     <!-- JavaScript Libraries -->
     <!-- jQuery -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
     <!-- Bootstrap Bundle -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
     <!-- Typed.js -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
-        // Initialize Typed.js for dynamic typing effect
-        var typed = new Typed('.typed', {
-            strings: ["Full Stack Web Developer", "MERN Stack Developer", "Freelancer"],
-            typeSpeed: 50,
-            loop: true,
-            loopCount: Infinity,
-            backSpeed: 50,
-        });
-    </script>
-    <script>
-        // Smooth scrolling when clicking on navigation links
-        document.querySelectorAll('.nav-menu a').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                const targetId = this.getAttribute('href').substring(1);
-                const target = document.getElementById(targetId);
-                
-                if(target) {
-                    window.scrollTo({
-                        top: target.offsetTop,
-                        behavior: 'smooth'
-                    });
-                }
+      // Initialize Typed.js for dynamic typing effect
+      var typed = new Typed(".typed", {
+        strings: [
+          "Full Stack Web Developer",
+          "MERN Stack Developer",
+          "Freelancer",
+        ],
+        typeSpeed: 50,
+        loop: true,
+        loopCount: Infinity,
+        backSpeed: 50,
+      });
+
+      // Smooth scrolling when clicking on navigation links
+      document.querySelectorAll(".nav-menu a").forEach((anchor) => {
+        anchor.addEventListener("click", function (event) {
+          event.preventDefault();
+          const targetId = this.getAttribute("href").substring(1);
+          const target = document.getElementById(targetId);
+          if (target) {
+            window.scrollTo({
+              top: target.offsetTop,
+              behavior: "smooth",
             });
+          }
+        });
+      });
+
+      // Function to check if an element is in the viewport
+      function isInViewport(element) {
+        const rect = element.getBoundingClientRect();
+        return (
+          rect.top >= 0 &&
+          rect.left >= 0 &&
+          rect.bottom <=
+            (window.innerHeight || document.documentElement.clientHeight) &&
+          rect.right <=
+            (window.innerWidth || document.documentElement.clientWidth)
+        );
+      }
+
+      // Function to update active link based on scroll position
+      function updateActiveLink() {
+        const sections = document.querySelectorAll("section");
+        const navLinks = document.querySelectorAll(".nav-menu a");
+        let activeSectionIndex = -1;
+
+        // Find the index of the section that is currently in the viewport
+        sections.forEach((section, index) => {
+          if (isInViewport(section)) {
+            activeSectionIndex = index;
+          }
         });
 
-    </script>
-    <script>
-        // Get references to navigation links and sections
-        const navLinks = document.querySelectorAll('.nav-menu a');
-        const sections = document.querySelectorAll('section');
-
-        // Function to check if an element is in the viewport
-        function isInViewport(element) {
-            const rect = element.getBoundingClientRect();
-            return (
-                rect.top >= 0 &&
-                rect.left >= 0 &&
-                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-            );
+        // Update the active link based on the active section index
+        if (activeSectionIndex !== -1) {
+          navLinks.forEach((link) => link.classList.remove("active"));
+          navLinks[activeSectionIndex].classList.add("active");
         }
+      }
 
-        // Function to update active link based on scroll position
-        function updateActiveLink() {
-            sections.forEach((section, index) => {
-                if (isInViewport(section)) {
-                    navLinks.forEach(link => link.classList.remove('active'));
-                    navLinks[index].classList.add('active');
-                }
-            });
-        }
-
-        // Listen for scroll events
-        window.addEventListener('scroll', updateActiveLink);
-
+      // Listen for scroll events
+      window.addEventListener("scroll", updateActiveLink);
     </script>
-</body>
+  </body>
 </html>
