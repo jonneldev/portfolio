@@ -373,6 +373,13 @@ section {
     margin-bottom: 20px;
 }
 
+.project-image {
+    margin: 15px auto;
+    display: block;
+    width: 250px;
+    border: 8px solid #2c2f3f;
+}
+
 .btn-primary {
     background-color: #007bff;
     color: #fff;
@@ -656,4 +663,3 @@ section {
 .contact .php-email-form button[type=submit]:hover {
     background: #37b3ed;
 }
-
