@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+
+    <link rel="stylesheet" href="./index3.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- Link to Font Awesome CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"/>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+
+    
+</head>
+<body>
+
+    <div>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+              <ul class="nav navbar-nav mx-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#home"><i class="fas fa-home"></i> Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about"><i class="fas fa-user"></i> About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#project"><i class="fas fa-project-diagram"></i> Projects</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#tools"><i class="fas fa-server"></i>   Tools</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+                </li>
+              </ul>
+            </div>  
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main">
+            <section id="home">
+                <div class="home">
+                    <img src="images/profile-img.png" class="profile--img" alt="">
+                    <h3>Jonnel Dosado</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="home--description">
+                    <h1>MERN Stack Developer</h1>
+                    <p>Hi there! I'm Jonnel, a MERN Stack Developer. Specializing in crafting dynamic and scalable web applications using MongoDB, Express.js, React.js, and Node.js. Let's build something remarkable together!</p>
+                    <a href="#contact">
+                        <button class="contact-btn fas fa-envelope"> Contact</button>
+                    </a>
+                    
+                </div>
+            </section>
+
+             <!-- About Section -->
+            <section id="about">
+                <div class="about">
+                    <h2 class="section--title">About</h2>
+                    <p>
+                        Hey there! I'm Jonnel, a fresh graduate from a web development
+                        bootcamp. I'm passionate about coding and enjoy bringing ideas
+                        to life through websites and apps. During my bootcamp, I dived
+                        deep into learning various programming languages and tools to
+                        build websites from scratch. Now, I'm eager to apply my skills
+                        to real-world projects and tackle new challenges. Let's
+                        connect and explore how we can bring your ideas to life
+                        through code!
+                    </p>
+                </div>
+                <div class="about--details">
+                    <img src="images/hero-bg4.jpeg" class="profile--about" alt="" />
+
+                    <div class="about--details-1">
+                        <h3>Full Stack Web Developer</h3>
+
+                    <ul>
+                        <li>
+                            <i class="bi bi-chevron-right"></i>
+                            <strong>Birthday:</strong> <span>15 July 1992</span>
+                        </li>
+                        <li>
+                            <i class="bi bi-chevron-right"></i>
+                            <strong>Phone:</strong> <span>+886 985999999</span>
+                        </li>
+                        <li>
+                            <i class="bi bi-chevron-right"></i>
+                            <strong>City:</strong>
+                            <span>Mandaue City, Cebu, Philippines</span>
+                        </li>
+                        <li>
+                            <i class="bi bi-chevron-right"></i>
+                            <strong>Age:</strong> <span>31</span>
+                        </li>
+                        <li>
+                            <i class="bi bi-chevron-right"></i>
+                            <strong>Email:</strong>
+                            <span>jonneldosado.code@gmail.com</span>
+                        </li>
+                        <li>
+                            <i class="bi bi-chevron-right"></i>
+                            <strong>Freelance:</strong> <span>Available</span>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+
+            </section>
+            
+            <!-- Project Section -->
+            <section id="project">
+                <h2 class="section--title">Projects</h2>
+                <p>Check out some of my projects:</p>
+                <div class="project--container">
+                    <div class="project--card">
+                        <img src="images/ecommerce.png" class="project--img" alt="">
+                        <h3>Ecommerce</h3>
+                        <a href="https://csp3-dosado.vercel.app/"></a>
+                        <button class="btn">View Project></button>
+
+                    </div>
+
+                    <div class="project--card">
+                        <img src="images/receipt-hub.png" class="project--img" alt="">
+                        <h3>Receipthub</h3>
+                        <a href="https://receipt-hub.netlify.app/"></a>
+                        <button class="btn">View Project></button>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('.nav-link').click(function() {
+                $('.nav-link').removeClass('active');
+                $(this).addClass('active');
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+            
