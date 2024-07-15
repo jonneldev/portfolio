@@ -4,9 +4,14 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #d5e6ec !important;
     padding: 50px;
+    
 }
 
 .navbar {

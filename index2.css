@@ -1,0 +1,437 @@
+/* Custom properties/variables  */
+:root {
+    --main-white: #d5e6ec;
+    --main-red: #ef4444;
+    --main-blue: #22d3ee;
+    --main-gray: #64748b;
+    --main-light-blue: #67e8f9;
+    --main-whitea: #f1f5f9;
+    --main-light-indigo: #4f46e5;
+  }
+  
+/* Base reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* box-sizing and font sizing */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+
+  /* Set font size for easy rem calculations
+   * default document font size = 16px, 1rem = 16px, 100% = 16px
+   * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
+  */
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+/* A few media query to set some font sizes at different screen sizes.
+ * This helps automate a bit of responsiveness.
+ * The trick is to use the rem unit for size values, margin and padding.
+ * Because rem is relative to the document font size
+ * when we scale up or down the font size on the document
+ * it will affect all properties using rem units for the values.
+*/
+
+/* I am using the em unit for breakpoints
+ * The calculation is the following
+ * screen size divided by browser base font size
+ * As an example: a breakpoint at 980px
+ * 980px / 16px = 61.25em
+*/
+
+/* 1200px / 16px = 75em */
+@media (max-width: 75em) {
+  html {
+    font-size: 60%;
+  }
+
+}
+
+/* 980px / 16px = 61.25em */
+@media (max-width: 61.25em) {
+  html {
+    font-size: 58%;
+  }
+
+}
+
+/* 460px / 16px = 28.75em */
+@media (max-width: 28.75em) {
+  html {
+    font-size: 55%;
+  }
+
+  .nav {
+    justify-content: center;
+  }
+
+  .nav-list {
+    margin: 0 1rem;
+  }
+}
+
+
+
+/* Base styles */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem; /* 18px */
+  font-weight: 400;
+  line-height: 1.4;
+  background-color: var(--main-white);
+}
+
+h1,
+h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 4.2rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-whitea);
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+/* nav */
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #4338ca;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+  z-index: 10;
+}
+
+.nav-list {
+  display: flex;
+  margin-right: 2rem;
+}
+
+.nav-list a {
+  display: block;
+  font-size: 2.2rem;
+  padding: 2rem;
+}
+
+.nav-list a:hover {
+  background: var(--main-light-indigo);
+  border-radius: 10%;
+  border-bottom: 2px solid var(--main-red);
+}
+
+
+
+.welcome-section {
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.welcome-section img {
+    width: 30%;
+    height: auto;
+}
+
+.welcome-section div {
+    margin-left: 2rem;
+    color: var(--main-gray);
+    
+}
+
+.welcome-section h1 {
+    font-size: 7rem;
+}
+
+.welcome-section p {
+    font-size: 3rem;
+    font-style: italic;
+    letter-spacing: 3px;
+}
+
+.welcome-section p::before {
+    content: '"';
+}
+
+.welcome-section p::after {
+    content: '"';
+}
+
+.f-name {
+    color: var(--main-light-indigo);
+}
+
+.l-initial {
+    color: var(--main-red);
+}
+
+
+
+/* Projects section */
+
+.projects-section {
+  text-align: center;
+  padding: 10rem 2rem;
+  background: var(--main-white);
+}
+
+.projects-section-header {
+  max-width: 640px;
+  margin: 0 auto 6rem auto;
+  border-bottom: 0.5rem solid var(--main-red);
+  color: var(--main-light-indigo);
+}
+
+@media (max-width: 28.75em) {
+  .projects-section-header {
+    font-size: 4rem;
+  }
+}
+
+/* "Automagic" image grid using no media queries */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+
+@media (max-width: 30.625em) {
+  .projects-section {
+    padding: 6rem 1rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.project {
+  background: var(--main-gray);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+}
+
+.code {
+  color: var(--main-gray);
+  transition: color 0.3s ease-out;
+}
+
+.project:hover .code {
+  color: #ff7f50;
+}
+
+.project-image {
+  height: calc(100% - 6.8rem);
+  width: 100%;
+  object-fit: cover;
+}
+
+.project-title {
+  font-size: 2rem;
+  padding: 2rem 0.5rem;
+}
+
+
+
+/* Skills section */
+#skills-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--main-whitea);
+    height: 100vh;
+    padding-top: 10rem;
+}
+
+.section--title {
+    max-width: 640px;
+    padding: 0 1rem;
+    margin: 0 auto 6rem auto;
+    border-bottom: 0.5rem solid var(--main-red);
+    color: var(--main-light-indigo);
+  }
+
+.skills--content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.skill--title {
+    font-size: 2.5rem;
+    padding: 2rem 0.5rem;
+    display: flex;
+    margin-right: 5rem;
+    color: var(--main-gray);
+}
+
+
+.skills--content ul li .fab,
+.skills--content ul li .fas {
+    font-size: 10rem;
+    margin-right: 1rem;
+}
+
+.skills--content ul li {
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+/* Icon colors */
+.skills--content ul li .fab.fa-html5 { color: #e34c26; }
+.skills--content ul li .fab.fa-css3-alt { color: #1572b6; }
+.skills--content ul li .fab.fa-js-square { color: #e6cf22; }
+.skills--content ul li .fab.fa-react { color: #61dbfb; }
+.skills--content ul li .fab.fa-bootstrap { color: #7952b3; }
+.skills--content ul li .fab.fa-node-js { color: #68a063; }
+.skills--content ul li .fas.fa-database { color: #4479a1; }
+.skills--content ul li .fab.fa-git { color: #f34f29; }
+.skills--content ul li .fab.fa-aws { color: #ff9900; }
+.skills--content ul li .fab.fa-docker { color: #2496ed; }
+.skills--content ul li .fab.fa-github { color: #6e5494; }
+.skills--content ul li .fas.fa-code { color: #2b7489; }
+
+
+/* Contact section */
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 80vh;
+  padding: 0 2rem;
+  background: var(--main-white);
+}
+
+.contact-section-header > h2 {
+  font-size: 6rem;
+  color: var(--main-light-indigo);
+}
+
+@media (max-width: 28.75em) {
+  .contact-section-header > h2 {
+    font-size: 4rem;
+  }
+}
+
+.contact-section-header > p {
+  font-style: italic;
+  color: var(--main-gray);
+  font-weight: bold;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 980px;
+  margin-top: 4rem;
+  flex-wrap: wrap;
+}
+
+.contact-details {
+  font-size: 2.4rem;
+  transition: transform 0.3s ease-out;
+  color: var(--main-gray);
+  margin-left: 2rem;
+}
+
+.contact-details i {
+    font-size: 24px; /* Adjust the size as needed */
+  }
+  
+  /* Lighter Colors for Icons */
+  .contact-details.facebook i {
+    color: rgb(73, 73, 240); /* Lighter Facebook Blue */
+  }
+  
+  .contact-details.github i {
+    color: black; /* Lighter GitHub Purple */
+  }
+  
+  .contact-details.linkedin i {
+    color: #00a0dc; /* Lighter LinkedIn Blue */
+  }
+  
+  .contact-details.mail i {
+    color: #ce1212; /* Lighter Google Mail Orange */
+  }
+
+.contact-details:hover {
+  transform: translateY(8px);
+}
+
+
+
+/* Footer */
+
+footer {
+  font-weight: 300;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem;
+  background: var(--main-gray);
+  border-top: 4px solid var(--main-red);
+}
+
+footer > p {
+  margin: 2rem;
+}
+
+footer i {
+  vertical-align: middle;
+}
+
+@media (max-width: 28.75em) {
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
