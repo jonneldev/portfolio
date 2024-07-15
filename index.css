@@ -236,6 +236,10 @@ img {
   margin-bottom: 6rem;
 }
 
+.projects-grid a {
+  height: 55rem;
+}
+
 @media (max-width: 30.625em) {
   .projects-section {
     padding: 6rem 1rem;
@@ -243,6 +247,10 @@ img {
 
   .projects-grid {
     grid-template-columns: 1fr;
+  }
+
+  .projects-grid a {
+    height: 45rem;
   }
 }
 
