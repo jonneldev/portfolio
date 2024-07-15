@@ -280,7 +280,6 @@ img {
     flex-direction: column;
     align-items: center;
     background-color: var(--main-whitea);
-    height: 100vh;
     padding-top: 10rem;
 }
 
@@ -295,6 +294,19 @@ img {
 .skills--content {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    height: 100vh;
+}
+
+@media (max-width: 78.75em) {
+    .skills--content .skill--container {
+        width: 100%;
+    }
+
+    .skills--content {
+        height: 100%;
+        margin: 2rem 5rem;
+    }
 }
 
 
@@ -304,6 +316,8 @@ img {
     display: flex;
     margin-right: 5rem;
     color: var(--main-gray);
+    letter-spacing: 0.2rem;
+
 }
 
 
@@ -315,10 +329,11 @@ img {
 
 .skills--content ul li {
     font-size: 2rem;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.15rem;
     display: flex;
     align-items: center;
     margin-bottom: 2rem;
+    color: var(--main-gray);
 }
 
 /* Icon colors */
@@ -345,7 +360,7 @@ img {
   align-items: center;
   text-align: center;
   width: 100%;
-  height: 80vh;
+  height: 95vh;
   padding: 0 2rem;
   background: var(--main-white);
 }
