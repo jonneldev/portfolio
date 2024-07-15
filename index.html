@@ -1,311 +1,249 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+  <head>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Personal Portfolio</title>
-
-    <link rel="stylesheet" href="./index.css" />
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <!-- Link to Font Awesome CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"/>
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
-
-    
-</head>
+  </head>
 <body>
 
-    <div>
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg fixed-top navbar-light">
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarText">
-              <ul class="nav navbar-nav mx-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="#home"><i class="fas fa-home"></i> Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#about"><i class="fas fa-user"></i> About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#project"><i class="fas fa-project-diagram"></i> Projects</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#skills"><i class="fas fa-server"></i>   Tools</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#contact"><i class="fas fa-envelope"></i> Contact</a>
-                </li>
-              </ul>
-            </div>  
-        </nav>
+    <!-- START NAV -->
+    <nav id="navbar" class="nav">
+        <ul class="nav-list">
+          <li>
+            <a href="#welcome-section">About</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#skills-section">Skills</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- END NAV -->
 
-        <!-- Main Content -->
-        <main class="main">
-            <section id="home">
-                <div class="home">
-                    <img src="images/profile-img.png" class="profile--img" alt="">
-                    <h3 id="profile--name">Jonnel Dosado</h3>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-github"></i></a>
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-google"></i></a>
-                    </div>
-                </div>
-                <div class="home--description">
-                    <h1 id="job--title">MERN Stack Developer</h1>
-                    <p>Hi there! I'm Jonnel, a MERN Stack Developer. Specializing in crafting dynamic and scalable web applications using MongoDB, Express.js, React.js, and Node.js. Let's build something remarkable together!</p>
-                    <a href="#contact">
-                        <button class="contact-btn fas fa-envelope"> Contact</button>
-                    </a>                    
-                </div>
-            </section>
-            
-             <!-- About Section -->
-            <section id="about">
-                <div class="about">
-                    <h2 class="section--title">About</h2>
-                    <p>
-                        Hey there! I'm Jonnel, a fresh graduate from a web development
-                        bootcamp. I'm passionate about coding and enjoy bringing ideas
-                        to life through websites and apps. During my bootcamp, I dived
-                        deep into learning various programming languages and tools to
-                        build websites from scratch. Now, I'm eager to apply my skills
-                        to real-world projects and tackle new challenges. Let's
-                        connect and explore how we can bring your ideas to life
-                        through code!
-                    </p>
-                </div>
-                <div class="about--details">
-                    <img src="images/hero-bg4.jpeg" class="profile--about" alt="" />
+      <!-- START WELCOME SECTION -->
+      <section id="welcome-section" class="welcome-section">
+        <img src="./images/baymax.jpg" alt="baymax">
+        <div class="itroduction">
+            <h1>Yooo... I'm <span class="f-name">Jonnel </span><span class="l-initial">D.</span></h1>
+            <p>a full stack web developer</p>
+        </div>
+      </section>
+      <!-- END WELCOME SECTION -->
 
-                    <div class="about--details-1">
-                        <h3>Full Stack Web Developer</h3>
+      <!-- START PROJECTS SECTION -->
 
-                    <ul class="about--info">
-                        <li>
-                            <i class="bi bi-chevron-right"></i>
-                            <strong>Birthday:</strong> <span>15 July 1992</span>
-                        </li>
-                        <li>
-                            <i class="bi bi-chevron-right"></i>
-                            <strong>Phone:</strong> <span>+886 985999999</span>
-                        </li>
-                        <li>
-                            <i class="bi bi-chevron-right"></i>
-                            <strong>City:</strong>
-                            <span>Hsinchu, Taiwan</span>
-                        </li>
-                        <li>
-                            <i class="bi bi-chevron-right"></i>
-                            <strong>Age:</strong> <span>31</span>
-                        </li>
-                        <li>
-                            <i class="bi bi-chevron-right"></i>
-                            <strong>Email:</strong>
-                            <span>jonneldosado.code@gmail.com</span>
-                        </li>
-                        <li>
-                            <i class="bi bi-chevron-right"></i>
-                            <strong>Freelance:</strong> <span>Available</span>
-                        </li>
-                    </ul>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Project Section -->
-            <section id="project">
-                <h2 class="section--title">Projects</h2>
-                <p>Check out some of my projects:</p>
-                <div class="project--container">
-                    <div class="project--card">
-                        <img src="images/ecommerce.png" class="project--img" alt="">
-                        <h3>Ecommerce</h3>
-                        <a href="https://csp3-dosado.vercel.app/" target="_blank" class="view--btn">View <i class="fas fa-external-link-alt"></i></a>
-
-                    </div>
-
-                    <div class="project--card">
-                        <img src="images/receipt-hub.png" class="project--img" alt="">
-                        <h3>Receipt hub</h3>
-                        <a href="https://receipt-hub.netlify.app/" target="_blank" class="view--btn">View <i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-            </section>
-
-            <section id="skills">
-                <div class="skills">
-                  <h2 class="section--title">Skills</h2>
-                  <p>
-                    I've developed a robust skill set through bootcamp training
-                    and self-study. Proficient in front-end technologies like
-                    HTML5, CSS3, and JavaScript, along with frameworks like React
-                    and Bootstrap. Experienced in back-end technologies such as
-                    Node.js, MongoDB, and Express.js. Skilled in version control
-                    (Git), cloud computing (AWS), containerization (Docker), and
-                    collaborative development (GitHub).
-                  </p>
-                </div>
+    <section id="projects" class="projects-section">
+        <h2 class="projects-section-header">These are some of my projects</h2>
   
-                <div class="skills--content">
-                  <div class="skill--container">
-                    <!-- Front-end Development Skills -->
-                    <h4 class="skill--title">Front-end Development</h4>
-                    <ul>
-                      <li><i class="fab fa-html5"></i> HTML5</li>
-                      <li><i class="fab fa-css3-alt"></i> CSS3</li>
-                      <li><i class="fab fa-js-square"></i> JavaScript</li>
-                      <li><i class="fab fa-react"></i> React</li>
-                      <li><i class="fab fa-bootstrap"></i> Bootstrap</li>
-                    </ul>
-                  </div>
+        <div class="projects-grid">
+          <a
+            href="https://6693fa2d9c198198426b3c7a--aesthetic-starship-234482.netlify.app/"
+            target="_blank"
+            class="project project-tile"
+          >
+            <img
+              class="project-image"
+              src="./images/tribute-page.png"
+              alt="project"
+            />
+            <p class="project-title">
+              <span class="code">&lt;</span>
+              Tribute Page
+              <span class="code">&#47;&gt;</span>
+            </p>
+          </a>
+          <a
+            href="https://survey-form0001.netlify.app/"
+            target="_blank"
+            class="project project-tile"
+          >
+            <img
+              class="project-image"
+              src="./images/survey-form.png"
+              alt="project"
+            />
+            <p class="project-title">
+              <span class="code">&lt;</span>
+              Survey Form
+              <span class="code">&#47;&gt;</span>
+            </p>
+          </a>
+          <a
+            href="https://66944bfa33078dcb7024e062--technical-documentation-page0001.netlify.app/"
+            target="_blank"
+            class="project project-tile"
+          >
+            <img
+              class="project-image"
+              src="./images/documentation-page.png"
+              alt="project"
+            />
+            <p class="project-title">
+              <span class="code">&lt;</span>
+              Documentation Page
+              <span class="code">&#47;&gt;</span>
+            </p>
+          </a>
+          <a
+            href="https://66944fe3a9380dc126bd0454--product-landing-page0001.netlify.app/"
+            target="_blank"
+            class="project project-tile"
+          >
+            <img
+              class="project-image"
+              src="./images/landing-page.png"
+              alt="project"
+            />
+            <p class="project-title">
+              <span class="code">&lt;</span>
+              Landing Page
+              <span class="code">&#47;&gt;</span>
+            </p>
+          </a>
+          <a
+            href="https://66945675dc51f3cb389bca28--calculator0003.netlify.app/"
+            target="_blank"
+            class="project project-tile"
+          >
+            <img
+              class="project-image"
+              src="./images/calculator.png"
+              alt="project"
+            />
+            <p class="project-title">
+              <span class="code">&lt;</span>
+              Calculator
+              <span class="code">&#47;&gt;</span>
+            </p>
+          </a>
+          <a
+            href="https://csp3-dosado.vercel.app/"
+            target="_blank"
+            class="project project-tile"
+          >
+            <img
+              class="project-image"
+              src="./images/ecommerce.png"
+              alt="project"
+            />
+            <p class="project-title">
+              <span class="code">&lt;</span>
+              Simple Eccomerce 
+              <span class="code">&#47;&gt;</span>
+            </p>
+          </a>
+        </div>
   
-                  <div class="skill--container">
-                    <!-- Back-end Development Skills -->
-                    <h4 class="skill--title">Back-end Development</h4>
-                    <ul>
-                      <li><i class="fab fa-node-js"></i> Node.js</li>
-                      <li><i class="fas fa-database"></i> MongoDB</li>
-                      <li><i class="fab fa-node-js"></i> Express.js</li>
-                    </ul>
-                  </div>
+      </section>
   
-                  <div class="skill--container">
-                    <!-- Other Skills -->
-                    <h4 class="skill--title">Others</h4>
-                    <ul>
-                      <li><i class="fab fa-git"></i> Git</li>
-                      <li><i class="fab fa-aws"></i> AWS</li>
-                      <li><i class="fab fa-docker"></i> Docker</li>
-                      <li><i class="fab fa-github"></i> GitHub</li>
-                      <li><i class="fas fa-code"></i> VS Code</li>
-                    </ul>
-                  </div>
-                </div>
-            </section>
+      <!-- END PROJECTS SECTION -->
 
-            <!-- Contact Section -->
-            <section id="contact" class="contact">
-                <div class="container">
-                <div class="section-title">
-                    <h2>Contact</h2>
-                    <p>
-                    If you have any questions or inquiries, feel free to reach out
-                    to me using the form below.
-                    </p>
-                </div>
+      <!-- Start Skill SECTION -->
+      <section id="skills-section">
+        <h2 class="section--title">Below are my Tech Stacks</h2>
+  
+        <div class="skills--content">
+          <div class="skill--container">
+            <!-- Front-end Development Skills -->
+            <h4 class="skill--title">Front-end Development</h4>
+            <ul>
+              <li><i class="fab fa-html5"></i> HTML5</li>
+              <li><i class="fab fa-css3-alt"></i> CSS3</li>
+              <li><i class="fab fa-js-square"></i> JavaScript</li>
+              <li><i class="fab fa-react"></i> React</li>
+              <li><i class="fab fa-bootstrap"></i> Bootstrap</li>
+            </ul>
+          </div>
 
-                <div class="row" data-aos="fade-in">
-                    <div class="col-lg-5 d-flex align-items-stretch">
-                    <div class="info">
-                        <!-- Contact Information -->
-                        <div class="address">
-                        <i class="bi bi-geo-alt"></i>
-                        <h4>Location:</h4>
-                        <p>
-                            No. 55, Xiangzeng 18th Street, Zhubei City, Hsinchu
-                            County, Taiwan, 302
-                        </p>
-                        </div>
+          <div class="skill--container">
+            <!-- Back-end Development Skills -->
+            <h4 class="skill--title">Back-end Development</h4>
+            <ul>
+              <li><i class="fab fa-node-js"></i> Node.js</li>
+              <li><i class="fas fa-database"></i> MongoDB</li>
+              <li><i class="fab fa-node-js"></i> Express.js</li>
+            </ul>
+          </div>
 
-                        <div class="email">
-                        <i class="bi bi-envelope"></i>
-                        <h4>Email:</h4>
-                        <p>jonneldosado.code@gmail.com</p>
-                        </div>
-                        <!-- Google Maps Embed -->
-                        <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.105330402759!2d120.98265431495295!3d24.836752984054382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442aae3c60a9e1f%3A0x5e06f051cafa78f1!2sZhubei%20City%2C%20Hsinchu%20County%2C%20Taiwan%2023022!5e0!3m2!1sen!2sus!4v1646797828223!5m2!1sen!2sus"
-                        frameborder="0"
-                        style="border: 0; width: 100%; height: 290px"
-                        allowfullscreen
-                        ></iframe>
-                    </div>
-                    </div>
+          <div class="skill--container">
+            <!-- Other Skills -->
+            <h4 class="skill--title">Others</h4>
+            <ul>
+              <li><i class="fab fa-git"></i> Git</li>
+              <li><i class="fab fa-aws"></i> AWS</li>
+              <li><i class="fab fa-docker"></i> Docker</li>
+              <li><i class="fab fa-github"></i> GitHub</li>
+              <li><i class="fas fa-code"></i> VS Code</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    <!-- End Skill SECTION -->
 
-                    <div class="col-lg-7 mt-5 mt-lg-0">
-                    <div class="form">
-                        <!-- Contact Form -->
-                        <form
-                        action="forms/contact.php"
-                        method="post"
-                        role="form"
-                        class="php-email-form"
-                        >
-                        <div class="row">
-                            <div class="form-group col-md-6">
-                            <label for="name">Your Name</label>
-                            <input
-                                type="text"
-                                name="name"
-                                class="form-control"
-                                id="name"
-                                required
-                            />
-                            </div>
-                            <div class="form-group col-md-6">
-                            <label for="email">Your Email</label>
-                            <input
-                                type="email"
-                                class="form-control"
-                                name="email"
-                                id="email"
-                                required
-                            />
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="subject">Subject</label>
-                            <input 
-                            type="text"
-                            class="form-control"
-                            name="subject"
-                            id="subject"
-                            required
-                            />
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea
-                            class="form-control"
-                            name="message"
-                            rows="10"
-                            id="message"
-                            required
-                            ></textarea>
-                        </div>
-                        <div class="text-center">
-                            <button type="submit">Send Message</button>
-                        </div>
-                        </form>
-                    </div>
-                    </div>
-                </div>
-                </div>
-            </section>
-            
-           
-            
+    <!-- START CONTACT SECTION -->
 
-        </main>
-    </div>
+    <section id="contact" class="contact-section">
+        <div class="contact-section-header">
+          <h2>Let's work together...</h2>
+          <p>How do you take your coffee?</p>
+        </div>
+        <div class="contact-links">
+            <a
+            href="https://www.facebook.com/litchex/"
+            target="_blank"
+            class="btn contact-details facebook"
+          ><i class="fab fa-facebook-square"></i> Facebook</a>
+          
+          <a
+            id="profile-link"
+            href="https://github.com/jonneldev"
+            target="_blank"
+            class="btn contact-details github"
+          ><i class="fab fa-github"></i> GitHub</a>
+          
+          <a
+            href="https://www.linkedin.com/in/jonnel-dosado/"
+            target="_blank"
+            class="btn contact-details linkedin"
+          ><i class="fab fa-linkedin"></i> LinkedIn</a>
+          
+          <a
+            href="https://mail.google.com/mail/u/2/#inbox"
+            class="btn contact-details mail"
+          ><i class="fas fa-at"></i> Send a mail</a>
+        </div>
+      </section>
+  
+      <!-- END CONTACT SECTION -->
+  
+      <!-- START FOOTER SECTION -->
+  
+      <footer>
+        <p>
+          &copy; Jonnel M. Dosado (last update: 2024)
+        </p>
+      </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
-
-    <script>
-        $(document).ready(function() {
-            $('.nav-link').click(function() {
-                $('.nav-link').removeClass('active');
-                $(this).addClass('active');
-            });
-        });
-    </script>
 </body>
-</html>
+</html>           
+ 
